@@ -153,11 +153,9 @@ def main():
 
     
     
-    # make predictions for test set
-    pred = model.predict_proba(x_test)[:,1]
-    rocAucScore = roc_auc_score(y_test, pred)
-    
-    run.log("roc-auc", rocAucScore)
+    # get the accuracy for test sets
+    accuracy = model.score(x_test, y_test)
+    run.log("Accuracy", np.float(accuracy))
 
 if __name__ == '__main__':
     main()
