@@ -134,7 +134,7 @@ def main():
 
     parser.add_argument('--C', type=float, default=1.0, help="Inverse of regularization strength. Smaller values cause stronger regularization")
     parser.add_argument('--max_iter', type=int, default=100, help="Maximum number of iterations to converge")
-    parser.add_argument('--penalty', type=str, default='l2', help="Specify the norm used in the penalization")
+    parser.add_argument('--penalty', type=dict, default='l2', help="Specify the norm used in the penalization")
     parser.add_argument('--solver', type=dict, default= 'lbfgs', help="Algorithm to use in the optimization problem")
     
 
