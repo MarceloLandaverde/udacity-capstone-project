@@ -22,10 +22,15 @@ from azureml.core.run import Run
 import argparse
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import roc_auc_score
+from azureml.data.dataset_factory import TabularDatasetFactory
 
 #-----------------------------------------------------------------------------
-#Import data:
-data = pp.load_data('https://www.openml.org/data/get_csv/16826755/phpMYEkMl')
+#Import data (out of Azure):
+#data = pp.load_data('https://www.openml.org/data/get_csv/16826755/phpMYEkMl')
+
+#Import data (Within Azure):
+data = TabularDatasetFactory.from_delimited_files('https://www.openml.org/data/get_csv/16826755/phpMYEkMl')
+dataset = data.to_pandas_dataframe()
 
 #-----------------------------------------------------------------------------
 #Clean Data
@@ -102,7 +107,7 @@ def clean_data(df):
     
     return x_df, y_df
 
-x, y = clean_data(data)
+x, y = clean_data(dataset)
 
 #-----------------------------------------------------------------------------
 # create scaler
