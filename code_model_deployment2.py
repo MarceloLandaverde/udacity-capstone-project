@@ -1,3 +1,4 @@
+#This is a support file based on question: https://knowledge.udacity.com/questions/425956 
 from azureml.core import Model
 from azureml.core.webservice import AciWebservice, Webservice
 model = best_run.register_model(model_name='model_name', model_path='./outputs/model_name.pkl',
