@@ -196,4 +196,5 @@ if __name__ == '__main__':
 # - Scale the variables
 # - Split Data in Train/Test
 # - Train the Logistic Regression model
+# !pip install -U --upgrade-strategy eager azureml-sdk[automl,widgets,notebooks]==1.21.0
 
