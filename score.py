@@ -19,4 +19,4 @@ def run(data):
         return result.tolist()
     except Exception as e:
         error = str(e)
-        return erro
+        return error
