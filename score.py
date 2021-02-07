@@ -6,7 +6,7 @@ import pandas as pd
 
 def init():
     global model
-    model_path = os.path.join(os.getenv('AZUREML_MODEL_DIR'), 'best_run_automl_2.pkl')
+    model_path = '/mnt/batch/tasks/shared/LS_root/mounts/clusters/auto-ml/code/Users/odl_user_137889/outputs/best_run_automl_2.pkl'
     print("Found model:", os.path.isfile(model_path)) #To check whether the model is actually present on the location we are looking at
     model = joblib.load(model_path)
 def run(data):
