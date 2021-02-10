@@ -1,6 +1,6 @@
 *NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
 
-# Your Project Title Here
+# Titanic Survival Prediction
 
 *TODO:* Write a short introduction to your project.
 In this project we are going to train the same dataset but using two different approaches.
@@ -20,6 +20,7 @@ The chart below should visualize the above explanation:
 
 ## Dataset
 As you probably have guessed from the project title we will be working with the "Titanic Dataset" which is already a classical dataset to learn Machine Learning \
+
 This data is an open source set which is available online through the "OpenML" Organization ( https://www.openml.org/ ) \
 If you are interested on checking the dataset by yourself you can click on the following link: https://www.openml.org/data/get_csv/16826755/phpMYEkMl
 
