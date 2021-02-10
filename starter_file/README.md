@@ -5,7 +5,7 @@
 *TODO:* Write a short introduction to your project.
 In this project we are going to train the same dataset but using two different approaches.
 
-- Approach No. 1 will be AutoML API from Azure \
+- Approach No. 1 will be AutoML API from Azure 
 - Approach No. 2 will be HyperDrive API (also from Azure) 
 
 For both approaches we will retrieve the best model and compare the best models among them. The winner of this comparison will be registered and deployed. 
@@ -19,6 +19,8 @@ The chart below should visualize the above explanation:
 *OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
 
 ## Dataset
+As you probably have guessed from the project title we will be working with the "Titanic Dataset" \
+This data is an open source set which is available online through the "OpenML" Organization ( https://www.openml.org/ )
 
 
 ### Overview
