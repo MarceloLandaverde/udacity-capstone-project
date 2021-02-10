@@ -5,7 +5,7 @@
 *TODO:* Write a short introduction to your project.
 In this project we are going to train the same dataset but using two different approaches.
 
-Approach No. 1 will be AutoML API from Azure /n
+Approach No. 1 will be AutoML API from Azure \
 Approach No. 2 will be HyperDrive API (also from Azure) 
 
 For both approaches we will retrieve the best model and compare the best models among them. The winner of this comparison will be registered and deployed. 
@@ -13,6 +13,7 @@ Finally and after the deployement has taken place we are going to test the best 
 
 The chart below should visualize the above explanation:
 
+![alt text]
 
 ## Project Set Up and Installation
 *OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
