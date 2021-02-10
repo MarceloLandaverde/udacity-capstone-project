@@ -13,7 +13,7 @@ Finally and after the deployement has taken place we are going to test the best 
 
 The chart below should visualize the above explanation:
 
-![alt text][https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/Diagram.PNG]
+![alt text]https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/Diagram.PNG
 
 ## Project Set Up and Installation
 *OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
