@@ -19,9 +19,9 @@ The chart below should visualize the above explanation:
 *OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
 
 ## Dataset
-As you probably have guessed from the project title we will be working with the "Titanic Dataset" \
-This data is an open source set which is available online through the "OpenML" Organization ( https://www.openml.org/ )
-
+As you probably have guessed from the project title we will be working with the "Titanic Dataset" which is already a classical dataset to learn Machine Learning \
+This data is an open source set which is available online through the "OpenML" Organization ( https://www.openml.org/ ) \
+If you are interested on checking the dataset by yourself you can click on the following link: https://www.openml.org/data/get_csv/16826755/phpMYEkMl
 
 ### Overview
 *TODO*: Explain about the data you are using and where you got it from.
