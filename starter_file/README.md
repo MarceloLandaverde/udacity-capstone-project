@@ -63,13 +63,12 @@ During the project two differents ways were implemented in order access the data
 
 For the experiment using AutoML we just simply imported it to the notebook by using the TabularDatasetFactory class and the method ".fromDelimetedFiles"
 Afterwards the dataset was registered
+
 The following pictures displays the steps mentioneds above:
 
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/dataset_AutoML.PNG)
 
-For the experiment using the HyperDrive we did the same as with the AutoMl; the only difference is that it was performend within the "train.py" script. 
-
-
+For the experiment using the HyperDrive we did the same as with the AutoMl; the only difference is that it was performend within the "train.py" script (rows 31-33 from script: https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/starter_file/train.py )
 
 
 ## Automated ML
