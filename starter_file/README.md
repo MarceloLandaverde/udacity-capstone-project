@@ -35,6 +35,13 @@ More specifically, we are going to concentrate on the following features:
 
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/features.PNG)
 
+The above features will be pre-processed to facilitate computation during training.If you are interested in this step you can take a look the the following files:
+
+- pre-process.py:
+This file contains different pre-process functions which will be then imported from the train.py file
+
+- train.py:
+This file imports the functions 
 
 
 ### Access
