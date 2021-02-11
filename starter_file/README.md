@@ -50,7 +50,7 @@ In addition to the clean data function the script applies the following steps:
 If you would like to take a look to the scripts here you will find the link to them:
 
 - Pre-process file: \
-https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/starter_file/train.py
+https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/starter_file/pre_preprocess.py
 
 - Train file: \
 https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/starter_file/train.py
@@ -59,6 +59,18 @@ https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/starte
 
 ### Access
 *TODO*: Explain how you are accessing the data in your workspace.
+During the project two differents ways were implemented in order access the data set.
+
+For the experiment using AutoML we just simply imported it to the notebook by using the TabularDatasetFactory class and the method ".fromDelimetedFiles"
+Afterwards the dataset was registered
+The following pictures displays the steps mentioneds above:
+
+![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/dataset_AutoML.PNG)
+
+For the experiment using the HyperDrive we did the same as with the AutoMl; the only difference is that it was performend within the "train.py" script. 
+
+
+
 
 ## Automated ML
 *TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
