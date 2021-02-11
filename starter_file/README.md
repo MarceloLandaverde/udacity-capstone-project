@@ -47,6 +47,14 @@ In addition to the clean data function the script applies the following steps:
   - Splits the data into train and test
   - Performs a logist regression
 
+If you would like to take a look to the scripts here you will find the link to them:
+
+- Pre-process file: \
+https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/starter_file/train.py
+
+- Train file: \
+https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/starter_file/train.py
+
 
 
 ### Access
