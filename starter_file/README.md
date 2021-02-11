@@ -21,14 +21,21 @@ The chart below should visualize the above explanation:
 ## Dataset
 As you probably have guessed from the project title we will be working with the "Titanic Dataset" which is already a classical dataset to learn Machine Learning \
 
-This data is an open source set which is available online through the "OpenML" Organization ( https://www.openml.org/ ) \
-If you are interested on checking the dataset by yourself you can click on the following link: https://www.openml.org/data/get_csv/16826755/phpMYEkMl
-
 ### Overview
-*TODO*: Explain about the data you are using and where you got it from.
+This data is an open source set which is available online through the "OpenML" Organization ( https://www.openml.org/ ) 
+If you are interested on checking the dataset by yourself you can click on the following link: https://www.openml.org/data/get_csv/16826755/phpMYEkMl
 
 ### Task
 *TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
+
+The main task for this project will be to build a predictive model that answers the question: “what sorts of people were more likely to survive?” 
+To answer the above stated question we are going to give the model different input variables such as age, type of cabin the passanger had, etc.
+
+More specifically, we are going to concentrate on the following features:
+
+
+
+
 
 ### Access
 *TODO*: Explain how you are accessing the data in your workspace.
