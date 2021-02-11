@@ -33,7 +33,7 @@ To answer the above stated question we are going to give the model different inp
 
 More specifically, we are going to concentrate on the following features:
 
-![alt text]()
+![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/features.PNG)
 
 
 
