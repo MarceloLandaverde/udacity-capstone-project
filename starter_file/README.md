@@ -19,7 +19,7 @@ The chart below should visualize the above explanation:
 *OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
 
 ## Dataset
-As you probably have guessed from the project title we will be working with the "Titanic Dataset" which is already a classical dataset to learn Machine Learning \
+As you probably have guessed from the project title we will be working with the "Titanic Dataset" which is already a classical dataset to learn Machine Learning
 
 ### Overview
 This data is an open source set which is available online through the "OpenML" Organization ( https://www.openml.org/ ) 
@@ -33,7 +33,7 @@ To answer the above stated question we are going to give the model different inp
 
 More specifically, we are going to concentrate on the following features:
 
-
+![alt text]()
 
 
 
