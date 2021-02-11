@@ -41,7 +41,12 @@ The above features will be pre-processed to facilitate computation during traini
 This file contains different pre-process functions which will be then imported from the train.py file
 
 - train.py:
-This file imports the functions 
+This file imports the functions from the pre-process file and wraps all of them into a function which is then call the "clean_data" fuction.
+In addition to the clean data function the script applies the following steps:
+  - Scales the independent variables
+  - Splits the data into train and test
+  - Performs a logist regression
+
 
 
 ### Access
