@@ -204,18 +204,38 @@ This policy allows to automatically terminate poorly performing runs with an ear
 - cpu_cluster:\
 Here we used the already existing cpu cluster that we created when performing the AutoMl Experiment
 
-primary_metric: \
+- primary_metric: \
 Since we want to compare the performance of both experiments (AutoML & HyperParameterTuning) the primary metric remains the same (accuracy) and the goal is to maximize the primary metric (PrimaryMetricGoal.MAXIMIZE)
 
-max_total_runs & max_concurrent_runs :\
+- max_total_runs & max_concurrent_runs :\
 These would be the same as the values that we used to perform the AutoML Experiment
 
-estimator: \
+- estimator: \
 We are going to use the estimator for training in Scikit-learn experiments.
 
 
 ### Results
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
+After having submitted the experiment run (based on the hyperdrive_config ).This is what happened:
+
+1) We were able to see the run details of the experiment as shown above:
+
+Experiment Name:
+![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/8-HyperDrive_Experiment.PNG)
+
+Run Details:
+![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/10-HyperDrive_Experiment_Run.PNG)
+
+As a side note I have added an additional picture where you can see the registration of both experiments (AutoML & HyperDrive) that took place:
+![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/11-Visualizing_Both_Experiments.PNG)
+
+
+2) By using the RunDetails widget we were able to find out that the experiment was done
+
+![alt text]()
+
+
+
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
