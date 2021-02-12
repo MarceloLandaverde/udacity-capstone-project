@@ -106,9 +106,9 @@ dfasdf
 - featurization: \
 Setup as 'Auto'which is the default setting and specifies that, as part of preprocessing, so called data guardrails and featurization steps are to be done automatically. \
 The guardrails help to identify potential issues with the data (for example, missing values or class imbalance). They also help to take corrective actions for improved results.\
-Featurization steps provide techniques that are automatically applied to the input data as part of the pre-process.\
+Featurization steps provide techniques that are automatically applied to the input data as part of the pre-process.\\
 Plese for more details checked on the documentation,it is definetely worth it: 
-https://docs.microsoft.com/en-us/azure/machine-learning/how-to-configure-auto-features#featurization \
+https://docs.microsoft.com/en-us/azure/machine-learning/how-to-configure-auto-features#featurization \\
 In our project I decided to pre-process the data in advance to reduce computation and be able to save some ressources.\
 The picture below shows the data guardrail states that were proved during trainig of the dataset. As you can see and due to the pre-process mentioned above all the states were flagged as "Passed" indicating that no data problems were detected, thus no additional action was required either from side nor from the automatic feturization process. \
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/Data_Guardrails.PNG)
