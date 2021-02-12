@@ -1,22 +1,16 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
+# Project: Titanic Survival Prediction
 
-# Titanic Survival Prediction
-
-*TODO:* Write a short introduction to your project.
-In this project we are going to train the same dataset but using two different approaches.
+In this project we are going to train the same dataset but using two different approaches:
 
 - Approach No. 1 will be AutoML API from Azure 
 - Approach No. 2 will be HyperDrive API (also from Azure) 
 
 For both approaches we will retrieve the best model and compare the best models among them. The winner of this comparison will be registered and deployed. 
-Finally and after the deployement has taken place we are going to test the best model End Point by sending a request.
+Finally and after the deployement has taken place we are going to test the best model end point by sending a request.
 
 The chart below should visualize the above explanation:
 
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/Diagram.PNG)
-
-## Project Set Up and Installation
-*OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
 
 ## Dataset
 As you probably have guessed from the project title we will be working with the "Titanic Dataset" which is already a classical dataset to learn Machine Learning
@@ -26,8 +20,6 @@ This data is an open source set which is available online through the "OpenML" O
 If you are interested on checking the dataset by yourself you can click on the following link: https://www.openml.org/data/get_csv/16826755/phpMYEkMl
 
 ### Task
-*TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
-
 The main task for this project will be to build a predictive model that answers the question: “what sorts of people were more likely to survive?” 
 To answer the above stated question we are going to give the model different input variables such as age, type of cabin the passanger had, etc.
 
