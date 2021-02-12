@@ -27,7 +27,7 @@ More specifically, we are going to concentrate on the following features:
 
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/features.PNG)
 
-The above features will be pre-processed to facilitate computation during training.If you are interested in this step you can take a look the the following files:
+The above features will be pre-processed to facilitate computation during training.If you are interested in this step you can take a look to the following files:
 
 - pre-process.py:
 This file contains different pre-process functions which will be then imported from the train.py file
@@ -50,11 +50,10 @@ https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/starte
 
 
 ### Access
-*TODO*: Explain how you are accessing the data in your workspace.
 During the project two differents ways were implemented in order access the data set.
 
 For the experiment using AutoML we just simply imported it to the notebook by using the TabularDatasetFactory class and the method ".fromDelimetedFiles"
-Afterwards the dataset was registered
+Afterwards the dataset will be registered
 
 The following pictures displays the steps mentioneds above:
 
@@ -65,11 +64,10 @@ For the experiment using the HyperDrive we did the same as with the AutoMl; the 
 
 
 ## Automated ML
-*TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
 First of all it is important to give a generic view of the AutoML settings and configuration that were used for this experiment.
 
 The first step is to create the AutoML settings which will be afterwards passed to the AutoML Configuration as part of the parameters needed within the configuration.
-Let's take briefly a look into the AuroML settings parameters used in this experiment:
+Let's take briefly a look into the AutoML settings parameters used in this experiment:
 
 - experiment_timeout_minutes:\
 Refers to the maximum amount of time in minutes that all iterations combined can take before the experiment terminates. For this project the timeout was set to 20 Minutes
@@ -102,7 +100,7 @@ Refers to name of the "dependent variable" of interest. In this case the name is
 Refers to the path in which our experiment is or will take place
 
 - enable_early_stopping: \
-dfasdf
+It supports early termination of low-performance runs.
 
 - featurization: \
 Setup as 'Auto'which is the default setting and specifies that, as part of preprocessing, so called data guardrails and featurization steps are to be done automatically. \
@@ -125,10 +123,7 @@ In the below picture you could see the code snippet which captures the AutoML Se
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/AutoML_Config.PNG)
 
 
-
-
 ### Results
-*TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
 After having submitted the experiment run (based on the AutoML Configuration). This is what happened:
 
 1) We were able to see the run details of the experiment as shown above:
@@ -172,8 +167,6 @@ Thus there is my opinion not much additional if something at all to do to improv
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 ## Hyperparameter Tuning
-*TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
-
 For the Hyperparameter Tuning we will have a "go" with a Logistic regression since this is a simple and very efficient method for binary and linear classification problems. In addition to that the model is very easy to realize and achieves very good performance with linearly separable classes. Due to this it has become an extensively employed algorithm for classification problems within the industry and scientific analysis projects.
 
 With respect to the paremeters that will be used for the Hyperparameter Tuning experiment we are going to concentrate on the following:
@@ -205,9 +198,7 @@ These would be the same as the values that we used to perform the AutoML Experim
 - estimator: \
 We are going to use the estimator for training in Scikit-learn experiments.
 
-
 ### Results
-*TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
 After having submitted the experiment run (based on the hyperdrive_config ).This is what happened:
 
 1) We were able to see the run details of the experiment as shown above:
@@ -236,21 +227,30 @@ Due to the fact that the metrics were higher on the model retrieved from the Aut
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 ## Model Deployment
-*TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
-
 For Model Deployment you can see below the steps that we took:
 
 1)Registering the model:
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/5-Registering_Best_Model_AutoML.PNG)
 
-2)Deploying the model: \
+2)Define inference configuration: \
+Due to the fact that we did not deploy using the GUI is important to define the environment used to run the model \
+The inference configuration references the following entities, which are used to run the model when it's deployed:
+
+- An entry script, named score.py, loads the model when the deployed service starts. This script is also responsible for receiving data, passing it to the model, and then returning a response.
+
+- An Azure Machine Learning environment. An environment defines the software dependencies needed to run the model and entry script.
+
+
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/Deploying_Model.PNG)
 
-3) Deployment Verification: \
+3)Deploying the model: \
+![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/Deploying_Model.PNG)
+
+4) Deployment Verification: \
 Verifiying URI, Endpoint and Application Insights
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/6-Best_Model_AutoML_Deployed.PNG)
 
-4)Querying the endpoint with a sample input
+5)Querying the endpoint with a sample input
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/7-Requests_Best_Model_AutoML_Deployed.PNG)
 
 
