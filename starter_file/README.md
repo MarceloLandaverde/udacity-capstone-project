@@ -137,6 +137,11 @@ In the below picture you could see the code snippet which captures the AutoML Se
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
+After having submitted the experiment run (based on the AutoML Configuration). This is what happened:
+
+1) We were able to see the run details of the experiment as shown above:
+![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/0-Experiment_Running_AutoML.PNG)
+
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
