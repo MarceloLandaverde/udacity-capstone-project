@@ -86,11 +86,11 @@ Refers to the maximum amount of time in minutes that all iterations combined can
 Refers to the maximum number of iterations that would be executed in parallel. Important to mention is that values for all experiments should be less than or equal to the maximum number of nodes of the compute cluster
 
 - primary_metric: \
-Refers to the metric that AutoML Process will optimize for model selection.For this project the primary metric selected was the accuracy. Other possibilities would have been the following: \
-AUC_weighted \
-average_precision_score_weighted \
-norm_macro_recall \
-precision_score_weighted
+Refers to the metric that AutoML Process will optimize for model selection.For this project the primary metric selected was the accuracy. Other possibilities would have been the   following: \
+  AUC_weighted \
+  average_precision_score_weighted \
+  norm_macro_recall \
+  precision_score_weighted
 
 Now let's move on with the AutoML Configuration and explain briefly those parameters:
 
@@ -119,7 +119,7 @@ Featurization steps provide techniques that are automatically applied to the inp
 Plese for more details checked on the documentation,it is definetely worth it: 
 https://docs.microsoft.com/en-us/azure/machine-learning/how-to-configure-auto-features#featurization \
 In our project I decided to pre-process the data in advance to reduce computation and be able to save some ressources.\
-The picture below shows the data guardrail states that were proved during trainig of the dataset. As you can see and due to the pre-process mentioned above all the states were flagged as "Passed" indicating that no data problems were detected, thus no additional action was required either from side nor from the automatic feturization process. \
+The picture below shows the data guardrail states that were proved during trainig of the dataset. As you can see and due to the pre-process mentioned above all the states were flagged as "Passed" indicating that no data problems were detected, thus no additional action was required either from side nor from the automatic featurization process. \
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/Data_Guardrails.PNG)
 
 - debug_log: \
