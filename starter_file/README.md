@@ -227,13 +227,12 @@ Run Details:
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/10-HyperDrive_Experiment_Run.PNG)
 
 As a side note I have added an additional picture where you can see the registration of both experiments (AutoML & HyperDrive) that took place:
-
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/11-Visualizing_Both_Experiments.PNG)
 
 
-2) By using the RunDetails widget we were able to find out that the experiment was done
+2) After the experiment was finished we were able to take a look to the best model:
 
-![alt text]()
+![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/12-HyperDrive_Best_Run.PNG)
 
 
 
