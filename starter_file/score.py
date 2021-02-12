@@ -21,11 +21,6 @@ def run(data):
         error = str(e)
         return error
 
-#Other options:
-#model_path = os.path.join(os.getenv('AZUREML_MODEL_DIR'), 'outputs/ best_run_automl_2.pkl')
-    
-#Ohter saving options:
-#import joblib
-#joblib.dump(value=best_model, filename="best_run_automl_2.pkl")
+
     
     
