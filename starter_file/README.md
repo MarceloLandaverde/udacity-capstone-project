@@ -85,17 +85,27 @@ Let's take briefly a look into the AuroML settings parameters used in this exper
 
 Now let's move on with the AutoML Configuration and explain briefly those parameters:
 
-- compute_target:
+- compute_target: \
 Refers to the computer target resource name (notebook138164) on which we will let the model training run
 
-- task:
-Refers to the type of task that we want to solve. In this case we are interested in accurately classifiying 
-- training_data
-- label_column_name
-- path
+- task: \
+Refers to the type of task that we want to solve. In this case we are interested in classifiying (as accurate as possible) if someone would survive (1) or not (0). Therefore the type of taks entered is "classification"
+
+- training_data: \
+Refers to the dataset that we will use for training the model.Remeber that in this case we have stored the dataset in a variable call training_dataset
+
+- label_column_name: \
+Refers to name of the "dependent variable" of interest. In this case the name is "survived"
+
+- path: \
+
+
 - enable_early_stopping
+
 - featurization
+
 - debug_log 
+
 - automl_settings
 
 In the below picture you could see the code snippet which captures the AutoML Settings and Configuration:
