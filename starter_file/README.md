@@ -79,9 +79,17 @@ First of all it is important to give a generic view of the AutoML settings and c
 The first step is to create the AutoML settings which will be afterwards passed to the AutoML Configuration as part of the parameters needed within the configuration.
 Let's take briefly a look into the AuroML settings parameters used in this experiment:
 
-- experiment_timeout_minutes
-- max_concurrent_iterations
-- primary_metric
+- experiment_timeout_minutes:\
+Refers to the maximum amount of time in minutes that all iterations combined can take before the experiment terminates. For this project the timeout was set to 20 Minutes
+
+- max_concurrent_iterations: \
+
+- primary_metric: \
+Refers to the metric that AutoML Process will optimize for model selection.For this project the primary metric selected was the accuracy. Other possibilities would have been the following: \
+AUC_weighted
+average_precision_score_weighted
+norm_macro_recall
+precision_score_weighted
 
 Now let's move on with the AutoML Configuration and explain briefly those parameters:
 
