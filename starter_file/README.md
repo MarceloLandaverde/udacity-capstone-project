@@ -167,6 +167,12 @@ Below you can see the picture confirming the above metrics:
 
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/4-Best_Model_AutoML_Run_ID.PNG)
 
+5) Best Model:
+The results of the AutoML gave as a winner a "VotingEnsemble" model with an accuracy of 0.82521.The voting ensemble method combines conceptually different machine learning classifiers and uses a majority vote or the average predicted probabilities (soft vote) to predict the class labels. Such a classifier can be useful for a set of equally well performing model in order to balance out their individual weaknesses
+
+By retrieving the properties and/or outputs of the model we are able to see the model parameters as well:
+
+![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/best_model_params.PNG)
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
