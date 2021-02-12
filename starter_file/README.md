@@ -234,7 +234,11 @@ As a side note I have added an additional picture where you can see the registra
 
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/12-HyperDrive_Best_Run.PNG)
 
+3)Improvement room: \
+The Logistic Regression Parameters concentrated only on the inverse of regularization strength ('--C') and the maximum number of iterations to solve to converge ('max_iter'). Nevetheless it would interesting to add additional parameters to observe how the model performs. Some proposals could be the type of penalty, different class weights or different type of solver.
 
+4) Deciding on which model to deployed: \
+Due to the fact that the metrics were higher on the model retrieved from the AutoML instead of the model from the Hyperparameter tuning we decided to deploy the AutoML model
 
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
@@ -242,11 +246,30 @@ As a side note I have added an additional picture where you can see the registra
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 
+For Model Deployment you can see below the steps that we took:
+
+1)Registering the model:
+![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/5-Registering_Best_Model_AutoML.PNG)
+
+2)Deploying the model: \
+![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/Deploying_Model.PNG)
+
+3) Deployment Verification: \
+Verifiying URI, Endpoint and Application Insights
+![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/6-Best_Model_AutoML_Deployed.PNG)
+
+4)Querying the endpoint with a sample input
+![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/7-Requests_Best_Model_AutoML_Deployed.PNG)
+
+
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+Please find below a short video link focusing on the following points:
+
 - A working model
 - Demo of the deployed  model
 - Demo of a sample request sent to the endpoint and its response
 
-## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+https://www.youtube.com/watch?hd=1&v=Njvp20OCG84&feature=youtu.be
+
+
