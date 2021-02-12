@@ -168,10 +168,14 @@ Below you can see the picture confirming the above metrics:
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/4-Best_Model_AutoML_Run_ID.PNG)
 
 5) Best Model:
-The results of the AutoML gave as a winner a "VotingEnsemble" model with an accuracy of 0.82521.The voting ensemble method combines conceptually different machine learning classifiers and uses a majority vote or the average predicted probabilities (soft vote) to predict the class labels. Such a classifier can be useful for a set of equally well performing model in order to balance out their individual weaknesses \
+The results of the AutoML gave as a winner a "VotingEnsemble" model with an accuracy of 0.82521.The voting ensemble method combines conceptually different machine learning classifiers and uses a majority vote or the average predicted probabilities (soft vote) to predict the class labels. Such a classifier can be useful for a set of equally well performing model in order to balance out their individual weaknesses. \
 By retrieving the properties and/or outputs of the model we are able to see the model parameters as well:
 
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/best_model_params.PNG)
+
+6) Room for improvement: 
+As we saw it earlier the data input given was very solid pre-processed. You can see this as well on the results of the data guardrails where every staged was "passed".
+Thus there is my opinion not much additional if something at all to do to improve the model. I guess you could argue that you could test some of the "blocked" models to see if the output would be better. Nevertheless I will remain with the opionion of sticking to the selected "VotingEnsemble" method, then in real life or real projects you do not have the time to concentrate in "too depth" in improving for let's say 0.01 points. 
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
