@@ -73,6 +73,31 @@ For the experiment using the HyperDrive we did the same as with the AutoMl; the 
 
 ## Automated ML
 *TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
+First of all it is important to give a generic view of the AutoML settings and configuration that were used for this experiment.
+
+The first step is to create the AutoML settings which will be afterwards passed to the AutoML Configuration as part of the parameters needed within the configuration.
+Let's take briefly a look into the AuroML settings parameters used in this experiment:
+
+- experiment_timeout_minutes
+- max_concurrent_iterations
+- primary_metric
+
+Now let's move on with the AutoML Configuration and explain briefly those parameters:
+
+- compute_target
+- task
+- training_data
+- label_column_name
+- path
+- enable_early_stopping
+- featurization
+- debug_log 
+- automl_settings
+
+In the below picture you could see the code snippet which captures the AutoML Settings and Configuration
+
+
+
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
