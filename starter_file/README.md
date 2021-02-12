@@ -196,6 +196,22 @@ In the picture below we can see the HyperDrive Configuration which has included 
 
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/9-HyperDrive_Configuration.PNG)
 
+In addition to the Logistic Regression parameters notice please the additional parameters that were passed to the HyperDrive Configuration. 
+
+- Early Stopping Policy:\
+This policy allows to automatically terminate poorly performing runs with an early termination policy. The result of this early termination is to improve computational efficiency. In this specif case the setup of the policy was the following: Bandit Policy which based on slack factor/slack amount and evaluation interval terminates runs where the primary metric is not within the specified slack factor/slack amount compared to the best performing run
+
+- cpu_cluster:\
+Here we used the already existing cpu cluster that we created when performing the AutoMl Experiment
+
+primary_metric: \
+Since we want to compare the performance of both experiments (AutoML & HyperParameterTuning) the primary metric remains the same (accuracy) and the goal is to maximize the primary metric (PrimaryMetricGoal.MAXIMIZE)
+
+max_total_runs & max_concurrent_runs :\
+These would be the same as the values that we used to perform the AutoML Experiment
+
+estimator: \
+We are going to use the estimator for training in Scikit-learn experiments.
 
 
 ### Results
