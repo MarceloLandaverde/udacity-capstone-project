@@ -66,7 +66,7 @@ Afterwards the dataset was registered
 
 The following pictures displays the steps mentioneds above:
 
-![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/AutoML_Config.PNG)
+![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/dataset_AutoML.PNG)
 
 
 For the experiment using the HyperDrive we did the same as with the AutoMl; the only difference is that it was performend within the "train.py" script (rows 31-33 from script: https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/starter_file/train.py )
@@ -97,7 +97,7 @@ Now let's move on with the AutoML Configuration and explain briefly those parame
 
 In the below picture you could see the code snippet which captures the AutoML Settings and Configuration:
 
-![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project)
+![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/AutoML_Config.PNG)
 
 
 
