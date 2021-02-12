@@ -181,6 +181,16 @@ Thus there is my opinion not much additional if something at all to do to improv
 
 ## Hyperparameter Tuning
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
+For the Hyperparameter Tuning we will have a "go" with a Logistic regression since this is a simple and very efficient method for binary and linear classification problems. In addition to that the model is very easy to realize and achieves very good performance with linearly separable classes. Due to this it has become an extensively employed algorithm for classification problems within the industry and scientific analysis projects.
+
+With respect to the paremeters that will be used for the Hyperparameter Tuning experiment we are going to concentrate on the following:
+
+- Inverse of Regularization Strength ('--C'):
+We will use this parameter to train the model with the goal of having a better generalization of the model.This would lead to better performance on unseen data, by preventing the algorithm from overfitting the training dataset.Concerning the values it is important to know that smaller values would specify stronger regularization.
+
+- Maximum Number of Iterations to solve to converge ('max_iter'):
+Refers to the maximum number of iterations taken for the solvers to converge
+
 
 
 ### Results
