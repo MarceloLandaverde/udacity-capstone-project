@@ -204,6 +204,7 @@ After having submitted the experiment run (based on the hyperdrive_config ).This
 1) We were able to see the run details of the experiment as shown above:
 
 Experiment Name:
+
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/8-HyperDrive_Experiment.PNG)
 
 Run Details:
@@ -223,13 +224,10 @@ The Logistic Regression Parameters concentrated only on the inverse of regulariz
 4) Deciding on which model to deployed: \
 Due to the fact that the metrics were higher on the model retrieved from the AutoML instead of the model from the Hyperparameter tuning we decided to deploy the AutoML model
 
-
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
-
 ## Model Deployment
 For Model Deployment you can see below the steps that we took:
 
-1)Registering the model:
+1)Registering the model: \
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/5-Registering_Best_Model_AutoML.PNG)
 
 2)Define inference configuration: \
@@ -244,8 +242,7 @@ If you whish to take a look to the score.py file you can access to it via this l
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/starter_file/score.py)
 
 
-
-3)Deploying the model: \
+3)Deploying the model (and inference config): \
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/Deploying_Model.PNG)
 
 4) Deployment Verification: \
