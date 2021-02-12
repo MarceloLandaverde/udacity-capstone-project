@@ -45,7 +45,7 @@ This file imports the functions from the pre-process file and wraps all of them 
 In addition to the clean data function the script applies the following steps:
   - Scales the independent variables
   - Splits the data into train and test
-  - Performs a logist regression
+  - Performs a logistic regression
 
 If you would like to take a look to the scripts here you will find the link to them:
 
@@ -83,12 +83,13 @@ Let's take briefly a look into the AuroML settings parameters used in this exper
 Refers to the maximum amount of time in minutes that all iterations combined can take before the experiment terminates. For this project the timeout was set to 20 Minutes
 
 - max_concurrent_iterations: \
+Refers to the maximum number of iterations that would be executed in parallel. Important to mention is that values for all experiments should be less than or equal to the maximum number of nodes of the compute cluster
 
 - primary_metric: \
 Refers to the metric that AutoML Process will optimize for model selection.For this project the primary metric selected was the accuracy. Other possibilities would have been the following: \
-AUC_weighted
-average_precision_score_weighted
-norm_macro_recall
+AUC_weighted \
+average_precision_score_weighted \
+norm_macro_recall \
 precision_score_weighted
 
 Now let's move on with the AutoML Configuration and explain briefly those parameters:
