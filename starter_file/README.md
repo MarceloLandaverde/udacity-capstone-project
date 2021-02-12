@@ -85,8 +85,11 @@ Let's take briefly a look into the AuroML settings parameters used in this exper
 
 Now let's move on with the AutoML Configuration and explain briefly those parameters:
 
-- compute_target
-- task
+- compute_target:
+Refers to the computer target resource name (notebook138164) on which we will let the model training run
+
+- task:
+Refers to the type of task that we want to solve. In this case we are interested in accurately classifiying 
 - training_data
 - label_column_name
 - path
