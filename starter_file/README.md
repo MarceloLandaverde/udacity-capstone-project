@@ -240,8 +240,10 @@ The inference configuration references the following entities, which are used to
 
 - An Azure Machine Learning environment. An environment defines the software dependencies needed to run the model and entry script.
 
+If you whish to take a look to the score.py file you can access to it via this link:
+![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/starter_file/score.py)
 
-![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/Deploying_Model.PNG)
+
 
 3)Deploying the model: \
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/Deploying_Model.PNG)
