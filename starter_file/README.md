@@ -98,11 +98,19 @@ Refers to the dataset that we will use for training the model.Remeber that in th
 Refers to name of the "dependent variable" of interest. In this case the name is "survived"
 
 - path: \
+Refers to the path in which our experiment is or will take place
+
+- enable_early_stopping: \
+dfasdf
+
+- featurization: \
+Setup as 'Auto'which is the default setting and specifies that, as part of preprocessing, so called data guardrails and featurization steps are to be done automatically.
+The guardrails help to identify potential issues with the data (for example, missing values or class imbalance). They also help to take corrective actions for improved results.
+featurization steps provide techniques that are automatically applied to the input data as part of the pre-process. 
+Plese for more details checked on the documentation,it is definetely worth it: 
+https://docs.microsoft.com/en-us/azure/machine-learning/how-to-configure-auto-features#featurization
 
 
-- enable_early_stopping
-
-- featurization
 
 - debug_log 
 
