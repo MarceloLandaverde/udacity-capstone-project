@@ -157,11 +157,11 @@ List of all Models:
 
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/3-List_of_All_Model_AutoML.PNG)
 
-4)Out of the list of all models we were able to see which one was the one presenting the best results. From the picture above you can see that the Run 51 gave the best model with the following metrics: \
+4)Out of the list of all models we were able to see which one was the one presenting the best results. From the picture above you can see that the Run 51 gave the best model with the following metrics: 
 
 Accuracy:  0.82521 \
 AUC Macro: 0.86622 \
-AUC Micro: 0.88014 \
+AUC Micro: 0.88014 
 
 Below you can see the picture confirming the above metrics:
 
