@@ -140,7 +140,32 @@ In the below picture you could see the code snippet which captures the AutoML Se
 After having submitted the experiment run (based on the AutoML Configuration). This is what happened:
 
 1) We were able to see the run details of the experiment as shown above:
+
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/0-Experiment_Running_AutoML.PNG)
+
+2) By using the RunDetails widget we were able to find out that the experiment was done
+
+![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/1-Run_Details_AutoML_Finished.PNG)
+
+3)By checking the experiment results we were able to see the a list containing all the child runs as well as the list of all models tested:
+
+Child Runs:
+
+![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/2-Run_Details_AutoML_Various_Exp.PNG)
+
+List of all Models:
+
+![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/3-List_of_All_Model_AutoML.PNG)
+
+4)Out of the list of all models we were able to see which one was the one presenting the best results. From the picture above you can see that the Run 51 gave the best model with the following metrics: \
+
+Accuracy:  0.82521 \
+AUC Macro: 0.86622 \
+AUC Micro: 0.88014 \
+
+Below you can see the picture confirming the above metrics:
+
+![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/4-Best_Model_AutoML_Run_ID.PNG)
 
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
