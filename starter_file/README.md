@@ -94,7 +94,9 @@ Now let's move on with the AutoML Configuration and explain briefly those parame
 - debug_log 
 - automl_settings
 
-In the below picture you could see the code snippet which captures the AutoML Settings and Configuration
+In the below picture you could see the code snippet which captures the AutoML Settings and Configuration:
+
+![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project)
 
 
 
