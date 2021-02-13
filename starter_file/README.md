@@ -13,7 +13,7 @@ The chart below should visualize the above explanation:
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/Diagram.PNG)
 
 ## Dataset
-As you probably have guessed from the project title we will be working with the "Titanic Dataset" which is already a classical dataset to learn Machine Learning
+As you probably have guessed from the project title we will be working with the "Titanic Dataset" which is already a classical dataset to learn Machine Learning.
 
 ### Overview
 This data is an open source set which is available online through the "OpenML" Organization ( https://www.openml.org/ ) 
@@ -70,10 +70,10 @@ The first step is to create the AutoML settings which will be afterwards passed 
 Let's take briefly a look into the AutoML settings parameters used in this experiment:
 
 - experiment_timeout_minutes:\
-Refers to the maximum amount of time in minutes that all iterations combined can take before the experiment terminates. For this project the timeout was set to 20 Minutes
+Refers to the maximum amount of time in minutes that all iterations combined can take before the experiment terminates. For this project the timeout was set to 20 Minutes.
 
 - max_concurrent_iterations: \
-Refers to the maximum number of iterations that would be executed in parallel. Important to mention is that values for all experiments should be less than or equal to the maximum number of nodes of the compute cluster
+Refers to the maximum number of iterations that would be executed in parallel. Important to mention is that values for all experiments should be less than or equal to the maximum number of nodes of the compute cluster.
 
 - primary_metric: \
 Refers to the metric that AutoML Process will optimize for model selection.For this project the primary metric selected was the accuracy. Other possibilities would have been the   following: \
@@ -85,19 +85,19 @@ Refers to the metric that AutoML Process will optimize for model selection.For t
 Now let's move on with the AutoML Configuration and explain briefly those parameters:
 
 - compute_target: \
-Refers to the computer target resource name (notebook138164) on which we will let the model training run
+Refers to the computer target resource name (notebook138164) on which we will let the model training run.
 
 - task: \
-Refers to the type of task that we want to solve. In this case we are interested in classifiying (as accurate as possible) if someone would survive (1) or not (0). Therefore the type of taks entered is "classification"
+Refers to the type of task that we want to solve. In this case we are interested in classifiying (as accurate as possible) if someone would survive (1) or not (0). Therefore the type of taks entered is "classification".
 
 - training_data: \
-Refers to the dataset that we will use for training the model.Remeber that in this case we have stored the dataset in a variable call training_dataset
+Refers to the dataset that we will use for training the model.Remeber that in this case we have stored the dataset in a variable call training_dataset.
 
 - label_column_name: \
-Refers to name of the "dependent variable" of interest. In this case the name is "survived"
+Refers to name of the "dependent variable" of interest. In this case the name is "survived".
 
 - path: \
-Refers to the path in which our experiment is or will take place
+Refers to the path in which our experiment is or will take place.
 
 - enable_early_stopping: \
 It supports early termination of low-performance runs.
@@ -113,7 +113,7 @@ The picture below shows the data guardrail states that were proved during traini
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/Data_Guardrails.PNG)
 
 - debug_log: \
-Refers to the name of log file to write debug information to.If not specified, 'automl.log' is used
+Refers to the name of log file to write debug information to.If not specified, 'automl.log' is used.
 
 - automl_settings: \
 Kwargs allowing us to pass keyworded variable length of arguments to the configuaration. In this case the AutoML Settings.
@@ -130,7 +130,7 @@ After having submitted the experiment run (based on the AutoML Configuration). T
 
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/0-Experiment_Running_AutoML.PNG)
 
-2) By using the RunDetails widget we were able to find out that the experiment was done
+2) By using the RunDetails widget we were able to find out that the experiment was done.
 
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/1-Run_Details_AutoML_Finished.PNG)
 
@@ -173,7 +173,7 @@ With respect to the paremeters that will be used for the Hyperparameter Tuning e
 We will use this parameter to train the model with the goal of having a better generalization of the model.This would lead to better performance on unseen data, by preventing the algorithm from overfitting the training dataset.Concerning the values it is important to know that smaller values would specify stronger regularization.
 
 - Maximum Number of Iterations to solve to converge ('max_iter'):
-Refers to the maximum number of iterations taken for the solvers to converge
+Refers to the maximum number of iterations taken for the solvers to converge.
 
 In the picture below we can see the HyperDrive Configuration which has included the above mentioned parameters:
 
@@ -182,16 +182,16 @@ In the picture below we can see the HyperDrive Configuration which has included 
 In addition to the Logistic Regression parameters notice please the additional parameters that were passed to the HyperDrive Configuration. 
 
 - Early Stopping Policy:\
-This policy allows to automatically terminate poorly performing runs with an early termination policy. The result of this early termination is to improve computational efficiency. In this specif case the setup of the policy was the following: Bandit Policy which based on slack factor/slack amount and evaluation interval terminates runs where the primary metric is not within the specified slack factor/slack amount compared to the best performing run
+This policy allows to automatically terminate poorly performing runs with an early termination policy. The result of this early termination is to improve computational efficiency. In this specif case the setup of the policy was the following: Bandit Policy which based on slack factor/slack amount and evaluation interval terminates runs where the primary metric is not within the specified slack factor/slack amount compared to the best performing run.
 
 - cpu_cluster:\
-Here we used the already existing cpu cluster that we created when performing the AutoMl Experiment
+Here we used the already existing cpu cluster that we created when performing the AutoMl Experiment.
 
 - primary_metric: \
-Since we want to compare the performance of both experiments (AutoML & HyperParameterTuning) the primary metric remains the same (accuracy) and the goal is to maximize the primary metric (PrimaryMetricGoal.MAXIMIZE)
+Since we want to compare the performance of both experiments (AutoML & HyperParameterTuning) the primary metric remains the same (accuracy) and the goal is to maximize the primary metric (PrimaryMetricGoal.MAXIMIZE).
 
 - max_total_runs & max_concurrent_runs :\
-These would be the same as the values that we used to perform the AutoML Experiment
+These would be the same as the values that we used to perform the AutoML Experiment.
 
 - estimator: \
 We are going to use the estimator for training in Scikit-learn experiments.
@@ -244,7 +244,7 @@ If you whish to take a look to the score.py file you can access to it via this l
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/Deploying_Model.PNG)
 
 4)Deployment Verification: \
-Verifiying URI, Endpoint and Application Insights
+Verifiying URI, Endpoint and Application Insights:
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/6-Best_Model_AutoML_Deployed.PNG)
 
 5)Querying the endpoint with a sample input
