@@ -221,7 +221,7 @@ As a side note I have added an additional picture where you can see the registra
 3)Improvement room: \
 The Logistic Regression Parameters concentrated only on the inverse of regularization strength ('--C') and the maximum number of iterations to solve to converge ('max_iter'). Nevetheless it would interesting to add additional parameters to observe how the model performs. Some proposals could be the type of penalty, different class weights or different type of solver.
 
-4) Deciding on which model to deployed: \
+4)Deciding on which model to deployed: \
 Due to the fact that the metrics were higher on the model retrieved from the AutoML instead of the model from the Hyperparameter tuning we decided to deploy the AutoML model
 
 ## Model Deployment
@@ -239,6 +239,7 @@ The inference configuration references the following entities, which are used to
 - An Azure Machine Learning environment. An environment defines the software dependencies needed to run the model and entry script.
 
 If you whish to take a look to the score.py file you can access to it via this link:
+
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/starter_file/score.py)
 
 
