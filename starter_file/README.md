@@ -225,10 +225,10 @@ Due to the fact that the metrics were higher on the model retrieved from the Aut
 ## Model Deployment
 For Model Deployment you can see below the steps that we took:
 
-1)Registering the model: \
+1) Registering the model: \
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/5-Registering_Best_Model_AutoML.PNG)
 
-2)Define inference configuration: \
+2) Define inference configuration: \
 Due to the fact that we did not deploy using the GUI is important to define the environment used to run the model \
 The inference configuration references the following entities, which are used to run the model when it's deployed:
 
@@ -240,14 +240,14 @@ If you whish to take a look to the score.py file you can access to it via this l
 (https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/starter_file/score.py)
 
 
-3)Deploying the model (and inference config): \
+3) Deploying the model (and inference config): \
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/Deploying_Model.PNG)
 
-4)Deployment Verification: \
+4) Deployment Verification: \
 Verifiying URI, Endpoint and Application Insights:
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/6-Best_Model_AutoML_Deployed.PNG)
 
-5)Querying the endpoint with a sample input
+5) Querying the endpoint with a sample input
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/7-Requests_Best_Model_AutoML_Deployed.PNG)
 
 
