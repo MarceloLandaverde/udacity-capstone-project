@@ -134,7 +134,7 @@ After having submitted the experiment run (based on the AutoML Configuration). T
 
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/1-Run_Details_AutoML_Finished.PNG)
 
-3)By checking the experiment results we were able to see the a list containing all the child runs as well as the list of all models tested:
+3) By checking the experiment results we were able to see the a list containing all the child runs as well as the list of all models tested:
 
 Child Runs:
 
@@ -144,7 +144,7 @@ List of all Models:
 
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/3-List_of_All_Model_AutoML.PNG)
 
-4)Out of the list of all models we were able to see which one was the one presenting the best results. From the picture above you can see that the Run 51 gave the best model with the following metrics: 
+4) Out of the list of all models we were able to see which one was the one presenting the best results. From the picture above you can see that the Run 51 gave the best model with the following metrics: 
 
 Accuracy:  0.82521 \
 AUC Macro: 0.86622 \
@@ -163,8 +163,6 @@ By retrieving the properties and/or outputs of the model we are able to see the 
 6) Room for improvement: 
 As we saw it earlier the data input given was very solid pre-processed. You can see this as well on the results of the data guardrails where every staged was "passed".
 Thus there is my opinion not much additional if something at all to do to improve the model. I guess you could argue that you could test some of the "blocked" models to see if the output would be better. Nevertheless I will remain with the opionion of sticking to the selected "VotingEnsemble" method, then in real life or real projects you do not have the time to concentrate in "too depth" in improving for let's say 0.01 points. 
-
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 ## Hyperparameter Tuning
 For the Hyperparameter Tuning we will have a "go" with a Logistic regression since this is a simple and very efficient method for binary and linear classification problems. In addition to that the model is very easy to realize and achieves very good performance with linearly separable classes. Due to this it has become an extensively employed algorithm for classification problems within the industry and scientific analysis projects.
@@ -218,10 +216,10 @@ As a side note I have added an additional picture where you can see the registra
 
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/12-HyperDrive_Best_Run.PNG)
 
-3)Improvement room: \
+3) Improvement room: \
 The Logistic Regression Parameters concentrated only on the inverse of regularization strength ('--C') and the maximum number of iterations to solve to converge ('max_iter'). Nevetheless it would interesting to add additional parameters to observe how the model performs. Some proposals could be the type of penalty, different class weights or different type of solver.
 
-4)Deciding on which model to deployed: \
+4) Deciding on which model to deployed: \
 Due to the fact that the metrics were higher on the model retrieved from the AutoML instead of the model from the Hyperparameter tuning we decided to deploy the AutoML model
 
 ## Model Deployment
@@ -239,14 +237,13 @@ The inference configuration references the following entities, which are used to
 - An Azure Machine Learning environment. An environment defines the software dependencies needed to run the model and entry script.
 
 If you whish to take a look to the score.py file you can access to it via this link:
-
-![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/starter_file/score.py)
+(https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/starter_file/score.py)
 
 
 3)Deploying the model (and inference config): \
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/Deploying_Model.PNG)
 
-4) Deployment Verification: \
+4)Deployment Verification: \
 Verifiying URI, Endpoint and Application Insights
 ![alt text](https://github.com/MarceloLandaverde/udacity-capstone-project/blob/master/Pictures/6-Best_Model_AutoML_Deployed.PNG)
 
@@ -255,7 +252,6 @@ Verifiying URI, Endpoint and Application Insights
 
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 Please find below a short video link focusing on the following points:
 
 - A working model
